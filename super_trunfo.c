@@ -1,0 +1,93 @@
+#include <stdio.h>
+ 
+int main() {
+    // variaveis do carta1
+    char estado1;
+    char codigo1[4];
+    char nome1[50];
+    int populacao1;
+    float area1;
+    float PIB1;
+    int turistico1;
+
+    // variaveis do carta2
+    char estado2;
+    char codigo2[4];
+    char nome2[50];
+    int populacao2;
+    float area2;
+    float PIB2;
+    int turistico2;
+
+    //usuário insere informações da carta1
+    printf("Digite a letra de A a H do Estado:  \n");
+    scanf("%c" , &estado1);
+    
+    printf("Digite a o código: (número de 1 a 4, nesse formado: B03) \n");
+    scanf("%s" , &codigo1);
+
+    printf("Digite o nome da cidade: \n");
+    getchar(); // limpa o Enter que sobrou do scanf anterior
+    fgets(nome1, 50, stdin);
+
+    printf("Digite a população: \n");
+    scanf("%d" , &populacao1);
+
+    printf("Digite a area² da cidade: \n");
+    scanf("%f" , &area1);
+
+    printf("Digite o PIB: \n");
+    scanf("%f" , &PIB1);
+
+    printf("Quantos pontos túristicos a cidade possui: \n");
+    scanf("%d", &turistico1); 
+
+    //usuário insere informações da carta2
+    printf("Digite a letra do Estado:  \n");
+    getchar();
+    scanf("%c" , &estado2);
+    
+    printf("Digite a o código: (exemplo: B03) \n");
+    scanf("%s" , &codigo2);
+
+    printf("Digite o nome da cidade: \n");
+    getchar(); // limpa o Enter que sobrou do scanf anterior
+    fgets(nome2, 50, stdin);
+
+    printf("Digite a população: \n");
+    scanf("%d" , &populacao2);
+
+    printf("Digite a area² da cidade: \n");
+    scanf("%f" , &area2);
+
+    printf("Digite o PIB: \n");
+    scanf("%f" , &PIB2);
+
+    printf("Quantos pontos túristicos a cidade possui: \n");
+    scanf("%d", &turistico2);  
+  
+  
+    // retorna as informações informadas da carta1
+    printf("\nCarta 1: \n");
+    printf("Letra do estado: %c \n", estado1);
+    printf("Código: %s \n", codigo1);
+    printf("Nome da cidade: %s", nome1);
+    printf("População: %d \n", populacao1);
+    printf("Area: %.2f km² \n", area1);
+    printf("PIB: %.2f bilhões de reais \n", PIB1);
+    printf("Pontos turistícos: %d \n", turistico1);
+
+     // retorna as informações informadas da carta2
+    printf("\nCarta 2: \n");
+    printf("Letra do estado: %c \n", estado2);
+    printf("Código: %s \n", codigo2);
+    printf("Nome da cidade: %s", nome2);
+    printf("População: %d \n", populacao2);
+    printf("Area: %.2f km² \n", area2);
+    printf("PIB: %.2f bilhões de reais \n", PIB2);
+    printf("Pontos turistícos: %d \n", turistico2);
+
+
+
+    return 0;
+}
