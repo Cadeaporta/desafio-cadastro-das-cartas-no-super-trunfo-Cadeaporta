@@ -9,8 +9,8 @@ int main() {
     float area1;
     float PIB1;
     int turistico1;
-    int densidade1; 
-    int capita1;
+    float densidade1; 
+    float capita1;
 
 
     // variaveis do carta2
@@ -21,8 +21,8 @@ int main() {
     float area2;
     float PIB2;
     int turistico2;
-    int densidade2; 
-    int capita2; 
+    float densidade2; 
+    float capita2; 
 
     //usuário insere informações da carta1
     printf("Digite a letra de A a H do Estado:  \n");
@@ -113,3 +113,4 @@ int main() {
 
     return 0;
 }
+
